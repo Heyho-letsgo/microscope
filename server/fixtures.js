@@ -13,7 +13,7 @@ if (Posts.find().count() === 0) {
 
   Posts.insert({
     title: 'The Meteor Book',
-    author: 'Tom Coleman',
+    author: 'André',
     url: 'http://themeteorbook.com'
   });
 }
