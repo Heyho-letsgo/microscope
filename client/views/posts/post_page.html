@@ -1,6 +1,11 @@
 
 <template name="postPage">
   {{> postItem}}
+    <ul class="comments">
+      {{#each comments}}
+        {{> comment}}
+      {{/each}}
+    </ul>
   <div>
   	<a href="{{pathFor 'postsList' }}" class="discuss btn">Retour</a>
 </div>
