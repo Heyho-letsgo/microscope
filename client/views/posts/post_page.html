@@ -6,7 +6,12 @@
         {{> comment}}
       {{/each}}
     </ul>
-  <div>
-  	<a href="{{pathFor 'postsList' }}" class="discuss btn">Retour</a>
-</div>
+
+  {{#if currentUser}}
+    {{> commentSubmit}}
+  {{else}}
+      <p>Please log in to leave a comment.</p>
+  {{/if}}
 </template>
+
+
